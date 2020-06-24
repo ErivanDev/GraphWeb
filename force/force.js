@@ -33,7 +33,7 @@ d3.json("force/force.json", function (error, graph) {
 
     svg.call(d3.zoom()
         .extent([[0, 0], [width, height]])
-        .scaleExtent([1, 8])
+        .scaleExtent([0.1, 10])
         .on("zoom", zoomed));
       
     function zoomed() {
